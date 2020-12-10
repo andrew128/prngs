@@ -60,21 +60,21 @@ def get_arbitrary_discrete_samples(num_samples, p = [0.1, 0.3, 0.2, 0.4],\
 
 def main():
     # Uniform discrete
-    # uniform_discrete_samples = get_uniform_continuous_samples(6, 10000)
-    # plt.hist(uniform_discrete_samples, bins=6)
-    # plt.title('Uniform Discrete Samples Between 0 and 6')
-    # plt.show()
+    uniform_discrete_samples = get_uniform_discrete_samples(6, 10000)
+    plt.hist(uniform_discrete_samples, bins=6)
+    plt.title('10000 Uniform Discrete Samples Between 0 and 5')
+    plt.show()
 
     # Uniform continuous
-    # uniform_samples = get_uniform_continuous_samples(2, 10000)
-    # plt.hist(uniform_samples, bins=150)
-    # plt.title('Uniform Continuous Samples Between 0 and 2')
-    # plt.show()
+    uniform_continuous_samples = get_uniform_continuous_samples(2, 10000)
+    plt.hist(uniform_continuous_samples, bins=150)
+    plt.title('10000 Uniform Continuous Samples Between 0 and 2')
+    plt.show()
 
     # Arbitrary discrete
     arbitrary_discrete_samples = get_arbitrary_discrete_samples(10000)
     plt.hist(arbitrary_discrete_samples, bins=4)
-    plt.title('Arbitrary Discrete Samples')
+    plt.title('10000 Arbitrary Discrete Samples')
     plt.show()
 
 if __name__ == "__main__":
